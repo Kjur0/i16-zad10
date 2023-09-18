@@ -1,0 +1,57 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #d2e8f7;
+	color: #0a3d62;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.table {
+	border: 4px solid black;
+	margin: 0 auto;
+}
+
+.table * {
+	border: 2px solid black;
+}
+
+.foot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	flex-direction: column;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 5px;
+}
+
+#filecontainer {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#filecontent[open] p {
+	display: block;
+	width: 95%;
+	min-height: 100px;
+	height: auto;
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	margin: 0 auto;
+}
