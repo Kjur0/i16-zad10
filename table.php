@@ -15,6 +15,9 @@
 		$kod = $_POST['kod'];
 		$opis = $_POST['opis'];
 		$cena = $_POST['cena'];
+		if ($kod == '') {
+			$kod = strtoupper(substr($opis, 0, 3));
+		}
 		$plik = fopen('dane.txt', 'a');
 		fwrite($plik, "$kod;$opis;$cena\n");
 		fclose($plik);
