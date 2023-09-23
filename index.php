@@ -10,17 +10,11 @@
 
 <body>
 	<h1 class="center">Strona główna</h1>
-	<div class="container">
-		<form action="form.php" method="post" class="el">
-			<input type="submit" value="Dodaj dane">
-		</form>
-		<form action="table.php" method="post" class="el">
-			<input type="submit" value="Wyświetl dane">
-		</form>
-		<form action="file.php" method="post" class="el">
-			<input type="submit" value="Pobierz plik">
-		</form>
-	</div>
+	<form class="container" action="index.php">
+		<input type="submit" value="Dodaj dane" formaction="form.php">
+		<input type="submit" value="Wyświetl dane" formaction="table.php">
+		<input type="submit" value="Pobierz plik" formaction="file.php">
+	</form>
 </body>
 
 </html>

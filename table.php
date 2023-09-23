@@ -16,8 +16,9 @@
 		$opis = $_POST['opis'];
 		$cena = $_POST['cena'];
 		if ($kod == '') {
-			$kod = strtoupper(substr($opis, 0, 3));
+			$kod = substr($opis, 0, 3);
 		}
+		$kod = strtoupper($kod);
 		$plik = fopen('dane.txt', 'a');
 		fwrite($plik, "$kod;$opis;$cena\n");
 		fclose($plik);
@@ -50,8 +51,11 @@
 		?>
 	</table>
 	<footer class="foot">
-		<a href="index.php">Strona główna</a><br>
-		<a href="form.php">Dodaj dane</a>
+		<form action="index.php" class="foot">
+			<input type="submit" value="Strona główna">
+			<input type="submit" value="Dodaj dane" formaction="form.php">
+			<input type="submit" value="Pobierz plik" formaction="file.php">
+		</form>
 	</footer>
 </body>
 

@@ -29,7 +29,11 @@
 		?>
 	</div>
 	<footer class="foot">
-		<a href="index.php">Strona główna</a>
+		<form action="index.php" class="foot">
+			<input type="submit" value="Strona główna">
+			<input type="submit" value="Dodaj dane" formaction="form.php">
+			<input type="submit" value="Wyświetl dane" formaction="table.php">
+		</form>
 	</footer>
 </body>
 
